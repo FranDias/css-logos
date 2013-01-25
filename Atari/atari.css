@@ -1,0 +1,72 @@
+body {
+    background-color:#e31116;
+    /* Change font-size to change the size of 
+    the animation  please try to use px values 
+    that are greater than 7 */
+    font-size:8px; 
+    height:100%;
+    margin:0;
+    padding:0;
+    width:100%;}
+    
+    #atariLogo { /* hitbox for the animation */
+    background-color:#ed1f24;
+    height:20em;
+    margin:1em;
+    padding:5em;
+    border:1px solid #ff4e52;}
+    
+
+    #atariLogo>span {
+    clear:left;
+    color:#fff;
+    float:left;
+    font-family:helvetica, sans-serif; /*real atari typeface is Avant Garde Demi */
+    font-size:2.65em;
+    
+    -o-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition:all .5s ease;}
+    ul {
+    padding:0;
+    margin:0;}
+    
+    li{
+    border-bottom:3em #fff solid;
+    float:left;
+    height:12em;
+    list-style:none;
+    margin:.5em;
+    width:0;
+    
+    -o-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition:all .5s ease;}
+    
+    li:nth-child(1) {
+    border-bottom-right-radius:0;
+    border-right:1.5em #fff solid;}
+    
+    li:nth-child(3){
+    border-bottom-left-radius:0;
+    border-left:1.5em #fff solid;}
+    
+    li:nth-child(2){
+    border-right:2.5em #fff solid;}
+    
+    /* hover stuffs (debated using the checked hack, meh, may as well just make a js version instead) */
+    #atariLogo:hover li:nth-child(1),
+    #atariLogo:hover li:nth-child(3) {
+    border-bottom:3em #fff solid;
+    width:6em;}
+    
+    #atariLogo:hover li:nth-child(1) {
+    border-bottom-right-radius:90%;}
+    
+    #atariLogo:hover li:nth-child(3){
+    border-bottom-left-radius:90%;}
+    
+    #atariLogo:hover>span {
+    font-size:6.8em;}​
